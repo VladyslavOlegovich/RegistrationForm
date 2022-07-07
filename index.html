@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration-form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="content">
+          <!-- login form -->
+          <div id="login-form">
+            <form action="">
+              <h3>Sign In</h3>
+              <input type="text" placeholder="Username..." id="username" />
+              <input type="password" placeholder="Password..." id="password" />
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Remember Me</label>
+              <a href="#" id="reset-password" class="btn" form="reset-form"
+                >Forgot password?
+              </a>
+              <button class="log-in" type="submit">Log In</button>
+              <p id="form-footer">
+                Don't have an account?
+                <a id="sign-up" href="#" class="btn" form="register-form"
+                  >Sign Up</a
+                >
+              </p>
+            </form>
+          </div>
+          <!-- register form -->
+          <div id="register-form" class="hidden">
+            <form action="">
+              <h3>Sign Up</h3>
+              <input type="text" placeholder="Username..." id="username" />
+              <input type="password" placeholder="Password..." id="password" />
+              <input
+                type="password"
+                placeholder="Repeat Password..."
+                id="repeat-password"
+              />
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">I agree to terms and conditions</label>
+              <button type="submit" class="log-in" type="submit">
+                Register
+              </button>
+              <p id="form-footer">
+                Already have an account?
+                <a id="sign-up" href="#" class="btn" form="login-form"
+                  >Sign In</a
+                >
+              </p>
+            </form>
+          </div>
+          <!-- reset form -->
+          <div id="reset-form" class="hidden">
+            <form action="">
+              <h3>Reset Your Password</h3>
+              <input
+                type="text"
+                placeholder="Username Or Email"
+                id="username"
+              />
+              <button type="submit" class="log-in">RESET</button>
+              <a href="#" id="sign-up" class="btn" form="login-form">Sign In</a>
+              <a
+                href="#"
+                id="sign-up"
+                class="float-right btn"
+                form="register-form"
+                >Sign Up</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
